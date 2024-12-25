@@ -1,0 +1,118 @@
+/* Styling for About Us */
+.about-header {
+    /* background-image: url('../assets/Pictures/Home/hero.jpg'); */
+    background-size: cover;
+    background-position: center;
+    color: #4CAF50;
+    padding: 120px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+.about-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s;
+}
+
+.about-header p {
+    font-size: 1.3rem;
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeInUp 1s;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-top: 40px;
+    color: #4CAF50;
+    text-align: center;
+}
+
+.content-section {
+    padding: 60px 20px;
+}
+
+.vision, .goals, .founders {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.goals ul {
+    list-style: none;
+    padding: 0;
+}
+
+.goals ul li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.goals ul li:before {
+    content: "✔";
+    color: #4CAF50;
+    position: absolute;
+    left: 0;
+}
+
+/* Founders Section */
+.founders .row {
+    justify-content: center;
+}
+
+.founder-card {
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.founder-card:hover {
+    transform: scale(1.05);
+}
+
+/* Image Styling */
+.founder-card img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover; /* Ensures the image fills and crops as needed */
+}
+
+.founder-card h5 {
+    margin-top: 15px;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.founder-card p {
+    font-size: 0.95rem;
+    color: #777;
+}
+
+/* Adjust column width for better spacing */
+@media(min-width: 992px) {
+    .col-lg-3 {
+        flex: 0 0 28%;
+        max-width: 28%;
+        margin-left: 2%;
+    }
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}

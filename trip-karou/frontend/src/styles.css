@@ -1,0 +1,14 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Scroll Effect */
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Cards Hover Effect */
+.card:hover {
+  transform: scale(1.05);
+}
